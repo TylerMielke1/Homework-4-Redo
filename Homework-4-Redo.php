@@ -20,11 +20,21 @@ print("<h2>Question 1: What is your favorite season?</h2>");
 $counter = 1;
 foreach($question1_answers as $answer){
     print("<div>");
-    print("<label><input type='radio' name='q1-color' id='q1-$counter' value='$counter' required > $answer</label>");
+    print("<label><input type='radio' name='q1-seasons' id='q1-$counter' value='$counter' required > $answer</label>");
     print("</div>");
     $counter++;
 }
 
-$question2_answers = array
+$question2_answers = array ("Not alot", "A little", "A lot");
+
+print("<div class='question'>");
+print("<h2>Question 2: How much sugar do you like in your coffee?</h2>");
+$counter = 1;
+foreach($question2_answers as $answer){
+    print("<div>");
+    print("<label><input type='radio' name='q2-sugar' id='q2-$counter' required value='$counter'> $answer</label>");
+    print("</div>");
+    $counter++;
+}
 ?>
 </html>
