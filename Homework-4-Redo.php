@@ -12,6 +12,17 @@
 </div>
 
 <form action="results.php" method="post" class="Coffee-Quiz">
-<?php   
+<?php  
+$question1_answers = array("Spring", "Summer", "Fall", "Winter"); 
+
+print("<div class='question'>");
+print("<h2>Question 1: What is your favorite season?</h2>");
+$counter = 1;
+foreach($q1_answers as $answer){
+    print("<div>");
+    print("<label><input type='radio' name='q1-color' id='q1-$counter' value='$counter' required > $answer</label>");
+    print("</div>");
+    $counter++;
+}
 ?>
 </html>
