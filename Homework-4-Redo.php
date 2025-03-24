@@ -36,5 +36,17 @@ foreach($question2_answers as $answer){
     print("</div>");
     $counter++;
 }
+
+$question3_answers = array("No cream", "A little", "A lot");
+
+print("<div class='question'>");
+print("<h2>Question 3: How much cream do you like in your coffee?</h2>");
+$counter = 1;
+foreach($question3_answers as $answer){
+    print("<div>");
+    print("<label><input type='radio' name='q3-cream' id='q3-$counter' required value='$counter'> $answer</label>");
+    print("</div>");
+    $counter++;
+}
 ?>
 </html>
