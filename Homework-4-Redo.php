@@ -60,5 +60,17 @@ foreach($question4_answers as $answer){
     print("</div>");
     $counter++;
 }
+
+$question5_answers = array("No", "Yes");
+
+print("<div class='question'>");
+print("<h2>Question 5: Do you like flavored coffee?</h2>");
+$counter = 1;
+foreach($question5_answers as $answer){
+    print("<div>");
+    print("<label><input type='radio' name='q5-flavor' id='5-$counter' required value='$counter'> $answer</label>");
+    print("</div>");
+    $counter++;
+}
 ?>
 </html>
