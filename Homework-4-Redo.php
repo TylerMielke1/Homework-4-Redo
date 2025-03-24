@@ -96,5 +96,17 @@ foreach($question7_answers as $answer){
     print("</div>");
     $counter++;
 }
+
+$question8_answers = array("9am", "12pm", "3pm", "6pm");
+
+print("<div class='question'>");
+print("<h2>Question 8: What time of day do you drink coffee?</h2>");
+$counter = 1;
+foreach($question8_answers as $answer){
+    print("<div>");
+    print("<label><input type='radio' name='q8-time' id='8-$counter' required value='$counter'> $answer</label>");
+    print("</div>");
+    $counter++;
+}
 ?>
 </html>
