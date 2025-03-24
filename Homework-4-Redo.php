@@ -84,5 +84,17 @@ foreach($question6_answers as $answer){
     print("</div>");
     $counter++;
 }
+
+$question7_answers = array("Starbucks", "Dunkin Donuts", "Tim Hortons");
+
+print("<div class='question'>");
+print("<h2>Question 7: What is your favorite coffee shop?</h2>");
+$counter = 1;
+foreach($question7_answers as $answer){
+    print("<div>");
+    print("<label><input type='radio' name='q7-shop' id='7-$counter' required value='$counter'> $answer</label>");
+    print("</div>");
+    $counter++;
+}
 ?>
 </html>
