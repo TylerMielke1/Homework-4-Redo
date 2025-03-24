@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 4 Realut</title>
+    <title>Homework 4 Results</title>
 </head>
 
 <body class="body">
@@ -11,3 +11,9 @@
 <h1> Is This Your Favorite Coffee? </h1>
 <br>
 </div>
+
+<?php
+
+?>
+</body>
+</html>
