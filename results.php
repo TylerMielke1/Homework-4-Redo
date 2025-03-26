@@ -13,6 +13,48 @@
 </div>
 
 <?php
+$favorite_Coffee_Points = array(
+    "Black Coffee" => 0,
+    "Latte" => 0,
+    "Cappuccino" => 0,
+    "Mocha" => 0,
+    "Americano" => 0,
+    "Espresso" => 0,
+    "Macchiato" => 0,
+    "Affogato" => 0
+);
+
+if($POST['q1-seasons'] && $_POST['q2-sugar'] && $_POST['q3-cream'] && $_POST['q4-roast'] && $_POST['flavor']&& $_POST['q6-ice'] && $_POST['q7-coffeeshop'] && $_POST['q8-time']){
+    switch($_POST['q1-seasons']){
+        case "1":
+            $favorite_Coffee_Points["Latte"] += 1;
+            $favorite_Coffee_Points["Cappuccino"] += 1;
+            $favorite_Coffee_Points["Mocha"] += 1;
+            $favorite_Coffee_Points["Macchiato"] += 1;
+            break;
+        case "2":
+            $favorite_Coffee_Points["Latte"] += 1;
+            $favorite_Coffee_Points["Cappuccino"] += 1;
+            $favorite_Coffee_Points["Mocha"] += 1;
+            $favorite_Coffee_Points["Macchiato"] += 1;
+            break;
+        case "3":
+            $favorite_Coffee_Points["Black Coffee"] += 1;
+            $favorite_Coffee_Points["Americano"] += 1;
+            $favorite_Coffee_Points["Espresso"] += 1;
+            $favorite_Coffee_Points["Affogato"] += 1;
+            break;
+        case "4":
+            $favorite_Coffee_Points["Black Coffee"] += 1;
+            $favorite_Coffee_Points["Americano"] += 1;
+            $favorite_Coffee_Points["Espresso"] += 1;
+            $favorite_Coffee_Points["Affogato"] += 1;
+            break;
+    }
+
+
+}
+
 
 ?>
 </body>
