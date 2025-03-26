@@ -129,6 +129,7 @@ print("</div>");
     
 ?>
     
-<a href="results.php"><button type="button" name="submit-button" id= "submit-button"> Submit </a>
-
+<button type="submit" name="submit-button" id="submit-button"> Submit </button>
+</form>
+</body>
 </html>

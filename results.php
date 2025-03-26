@@ -137,7 +137,7 @@ if(isset($_POST['q1-seasons']) && isset($_POST['q2-sugar']) && isset($_POST['q3-
             break;
         }
     
-    switch($_POST['q6-ice']){
+    switch($_POST['q6-iced']){
         case "1":
             $favorite_Coffee_Points["Black Coffee"] += 1;
             $favorite_Coffee_Points["Americano"] += 1;
@@ -152,7 +152,7 @@ if(isset($_POST['q1-seasons']) && isset($_POST['q2-sugar']) && isset($_POST['q3-
             break;
         }
     
-    switch($_POST['q7-coffeeshop']){
+    switch($_POST['q7-shop']){
         case "1":
             $favorite_Coffee_Points["Starbucks"] += 1;
             break;
@@ -211,15 +211,13 @@ switch($top_class){
     
     }
     
-else{
-    print("<h2> There was an error! </h2>");
-    }
+
     
     print("</div>");
     
 ?>
     
-<a href="homework4.php"><button type="button" name="return-button" id= "return-button"> Restart </a>
+<a href="homework4.php"><button type="button" name="return-button" id= "return-button"> Restart </button></a>
 
 </body>
 </html>
