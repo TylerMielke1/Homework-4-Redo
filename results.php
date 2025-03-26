@@ -50,6 +50,7 @@ if($POST['q1-seasons'] && $_POST['q2-sugar'] && $_POST['q3-cream'] && $_POST['q4
             $favorite_Coffee_Points["Espresso"] += 1;
             $favorite_Coffee_Points["Affogato"] += 1;
             break;
+        }
 
     switch($_POST['q2-sugar']){
         case "1":
@@ -70,6 +71,7 @@ if($POST['q1-seasons'] && $_POST['q2-sugar'] && $_POST['q3-cream'] && $_POST['q4
             $favorite_Coffee_Points["Mocha"] += 1;
             $favorite_Coffee_Points["Macchiato"] += 1;
             break;
+        }
     
     switch($_POST['q3-cream']){
         case "1":
@@ -90,7 +92,7 @@ if($POST['q1-seasons'] && $_POST['q2-sugar'] && $_POST['q3-cream'] && $_POST['q4
             $favorite_Coffee_Points["Mocha"] += 1;
             $favorite_Coffee_Points["Macchiato"] += 1;
             break;
-       
+        }
 
     switch($_POST['q4-roast']){
         case "1":
@@ -117,6 +119,7 @@ if($POST['q1-seasons'] && $_POST['q2-sugar'] && $_POST['q3-cream'] && $_POST['q4
             $favorite_Coffee_Points["Espresso"] += 1;
             $favorite_Coffee_Points["Affogato"] += 1;
             break;
+        }
 
 
     switch($_POST['q5-flavor']){
@@ -132,6 +135,7 @@ if($POST['q1-seasons'] && $_POST['q2-sugar'] && $_POST['q3-cream'] && $_POST['q4
             $favorite_Coffee_Points["Mocha"] += 1;
             $favorite_Coffee_Points["Macchiato"] += 1;
             break;
+        }
     
     switch($_POST['q6-ice']){
         case "1":
@@ -146,6 +150,7 @@ if($POST['q1-seasons'] && $_POST['q2-sugar'] && $_POST['q3-cream'] && $_POST['q4
             $favorite_Coffee_Points["Mocha"] += 1;
             $favorite_Coffee_Points["Macchiato"] += 1;
             break;
+        }
     
     switch($_POST['q7-coffeeshop']){
         case "1":
@@ -157,6 +162,7 @@ if($POST['q1-seasons'] && $_POST['q2-sugar'] && $_POST['q3-cream'] && $_POST['q4
         case "3":
             $favorite_Coffee_Points["Tim Hortons"] += 1;
             break;
+        }
 
     switch($_POST['q8-time']){
         case "1":
@@ -170,9 +176,11 @@ if($POST['q1-seasons'] && $_POST['q2-sugar'] && $_POST['q3-cream'] && $_POST['q4
             $favorite_Coffee_Points["Cappuccino"] += 1;
             $favorite_Coffee_Points["Mocha"] += 1;
             $favorite_Coffee_Points["Macchiato"] += 1;
-            break;
-    }
+            break; 
+        }
 
+$top_class = array_search(max($favorite_Coffee_Points), $favorite_Coffee_Points);
+    
 ?>
 </body>
 </html>
