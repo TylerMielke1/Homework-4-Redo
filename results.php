@@ -180,7 +180,15 @@ if($POST['q1-seasons'] && $_POST['q2-sugar'] && $_POST['q3-cream'] && $_POST['q4
         }
 
 $top_class = array_search(max($favorite_Coffee_Points), $favorite_Coffee_Points);
-    
+
+print("<div class='results'>");
+        
+switch($top_class){
+    case "Black Coffee":
+        print("<h2> Your favorite coffee is Black Coffee! </h2>");
+        break;
+
 ?>
+
 </body>
 </html>
