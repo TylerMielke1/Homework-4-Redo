@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +15,14 @@
 </div>
 
 <?php
+
+/*
+ * This file generates the outcome of the questions.
+ * Author: Tyler Mielke
+ * Email: tmielke@school.edu
+ */
+
+// Initialize an array to keep track of points for each coffee type
 $favorite_Coffee_Points = array(
     "Black Coffee" => 0,
     "Latte" => 0,
@@ -27,7 +37,10 @@ $favorite_Coffee_Points = array(
     "Tim Hortons" => 0
 );
 
+// Check if all the required POST variables are set
 if(isset($_POST['q1-seasons']) && isset($_POST['q2-sugar']) && isset($_POST['q3-cream']) && isset($_POST['q4-roast']) && isset($_POST['q5-flavor']) && isset($_POST['q6-iced']) && isset($_POST['q7-shop']) && isset($_POST['q8-time'])){
+    
+    // Update points based on the answer to question 1
     switch($_POST['q1-seasons']){
         case "1":
             $favorite_Coffee_Points["Latte"] += 1;
@@ -55,6 +68,7 @@ if(isset($_POST['q1-seasons']) && isset($_POST['q2-sugar']) && isset($_POST['q3-
             break;
         }
 
+    // Update points based on the answer to question 2
     switch($_POST['q2-sugar']){
         case "1":
             $favorite_Coffee_Points["Black Coffee"] += 1;
@@ -76,6 +90,7 @@ if(isset($_POST['q1-seasons']) && isset($_POST['q2-sugar']) && isset($_POST['q3-
             break;
         }
     
+    // Update points based on the answer to question 3
     switch($_POST['q3-cream']){
         case "1":
             $favorite_Coffee_Points["Black Coffee"] += 1;
@@ -97,6 +112,7 @@ if(isset($_POST['q1-seasons']) && isset($_POST['q2-sugar']) && isset($_POST['q3-
             break;
         }
 
+    // Update points based on the answer to question 4
     switch($_POST['q4-roast']){
         case "1":
             $favorite_Coffee_Points["Latte"] += 1;
@@ -124,7 +140,7 @@ if(isset($_POST['q1-seasons']) && isset($_POST['q2-sugar']) && isset($_POST['q3-
             break;
         }
 
-
+    // Update points based on the answer to question 5
     switch($_POST['q5-flavor']){
         case "1":
             $favorite_Coffee_Points["Black Coffee"] += 1;
@@ -140,6 +156,7 @@ if(isset($_POST['q1-seasons']) && isset($_POST['q2-sugar']) && isset($_POST['q3-
             break;
         }
     
+    // Update points based on the answer to question 6
     switch($_POST['q6-iced']){
         case "1":
             $favorite_Coffee_Points["Black Coffee"] += 1;
@@ -155,6 +172,7 @@ if(isset($_POST['q1-seasons']) && isset($_POST['q2-sugar']) && isset($_POST['q3-
             break;
         }
     
+    // Update points based on the answer to question 7
     switch($_POST['q7-shop']){
         case "1":
             $favorite_Coffee_Points["Starbucks"] += 1;
@@ -167,6 +185,7 @@ if(isset($_POST['q1-seasons']) && isset($_POST['q2-sugar']) && isset($_POST['q3-
             break;
         }
 
+    // Update points based on the answer to question 8
     switch($_POST['q8-time']){
         case "1":
             $favorite_Coffee_Points["Black Coffee"] += 1;
@@ -182,8 +201,10 @@ if(isset($_POST['q1-seasons']) && isset($_POST['q2-sugar']) && isset($_POST['q3-
             break; 
         }
 
+// Determine the coffee type with the highest points
 $top_class = array_search(max($favorite_Coffee_Points), $favorite_Coffee_Points);
 
+// Display the result
 print("<div class='results'>");
         
 switch($top_class){
@@ -214,11 +235,11 @@ switch($top_class){
     
     }
     
-
-    
+    // Close the results div
     print("</div>");
     
 ?>
+<!-- Button to restart the quiz -->
 <a href="Homework-4-Redo.php"><button type="button" name="restart-button" id="restart-button"> Restart </button></a>
 </body>
 </html>
