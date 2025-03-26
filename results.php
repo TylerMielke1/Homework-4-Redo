@@ -92,6 +92,32 @@ if($POST['q1-seasons'] && $_POST['q2-sugar'] && $_POST['q3-cream'] && $_POST['q4
             break;
        
 
+    switch($_POST['q4-roast']){
+        case "1":
+            $favorite_Coffee_Points["Latte"] += 1;
+            $favorite_Coffee_Points["Cappuccino"] += 1;
+            $favorite_Coffee_Points["Mocha"] += 1;
+            $favorite_Coffee_Points["Macchiato"] += 1;
+            break;
+        case "2":
+            $favorite_Coffee_Points["Latte"] += 1;
+            $favorite_Coffee_Points["Cappuccino"] += 1;
+            $favorite_Coffee_Points["Mocha"] += 1;
+            $favorite_Coffee_Points["Macchiato"] += 1;
+            break;
+        case "3":
+            $favorite_Coffee_Points["Black Coffee"] += 1;
+            $favorite_Coffee_Points["Americano"] += 1;
+            $favorite_Coffee_Points["Espresso"] += 1;
+            $favorite_Coffee_Points["Affogato"] += 1;
+            break;
+        case "4":
+            $favorite_Coffee_Points["Black Coffee"] += 1;
+            $favorite_Coffee_Points["Americano"] += 1;
+            $favorite_Coffee_Points["Espresso"] += 1;
+            $favorite_Coffee_Points["Affogato"] += 1;
+            break;
+    }
 
 ?>
 </body>
