@@ -219,8 +219,6 @@ switch($top_class){
     print("</div>");
     
 ?>
-    
-<a href="homework4.php"><button type="button" name="return-button" id= "return-button"> Restart </button></a>
-
+<a href="Homework-4-Redo.php"><button type="button" name="restart-button" id="restart-button"> Restart </button></a>
 </body>
 </html>
