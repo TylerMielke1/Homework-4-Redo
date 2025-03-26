@@ -21,7 +21,10 @@ $favorite_Coffee_Points = array(
     "Americano" => 0,
     "Espresso" => 0,
     "Macchiato" => 0,
-    "Affogato" => 0
+    "Affogato" => 0,
+    "Starbucks" => 0,
+    "Dunkin Donuts" => 0,
+    "Tim Hortons" => 0
 );
 
 if(isset($_POST['q1-seasons']) && isset($_POST['q2-sugar']) && isset($_POST['q3-cream']) && isset($_POST['q4-roast']) && isset($_POST['q5-flavor']) && isset($_POST['q6-iced']) && isset($_POST['q7-shop']) && isset($_POST['q8-time'])){
