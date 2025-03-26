@@ -24,7 +24,7 @@ $favorite_Coffee_Points = array(
     "Affogato" => 0
 );
 
-if($_POST['q1-seasons'] && $_POST['q2-sugar'] && $_POST['q3-cream'] && $_POST['q4-roast'] && $_POST['q5-flavor'] && $_POST['q6-iced'] && $_POST['q7-shop'] && $_POST['q8-time']){
+if(isset($_POST['q1-seasons']) && isset($_POST['q2-sugar']) && isset($_POST['q3-cream']) && isset($_POST['q4-roast']) && isset($_POST['q5-flavor']) && isset($_POST['q6-iced']) && isset($_POST['q7-shop']) && isset($_POST['q8-time'])){
     switch($_POST['q1-seasons']){
         case "1":
             $favorite_Coffee_Points["Latte"] += 1;
