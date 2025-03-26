@@ -211,7 +211,13 @@ switch($top_class){
     
     }
     
+else{
+    print("<h2> There was an error! </h2>");
+    }
+    
+    print("</div>");
+    
 ?>
-
+    
 </body>
 </html>
