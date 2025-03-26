@@ -219,5 +219,7 @@ else{
     
 ?>
     
+<a href="homework4.php"><button type="button" name="return-button" id= "return-button"> Restart </a>
+
 </body>
 </html>

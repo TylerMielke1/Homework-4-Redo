@@ -124,5 +124,11 @@ foreach($question8_answers as $answer){
     print("</div>");
     $counter++;
 }
+
+print("</div>");
+    
 ?>
+    
+<a href="results.php"><button type="button" name="submit-button" id= "submit-button"> Submit </a>
+
 </html>
