@@ -187,7 +187,30 @@ switch($top_class){
     case "Black Coffee":
         print("<h2> Your favorite coffee is Black Coffee! </h2>");
         break;
-
+        case "Latte":
+            print("<h2> Your favorite coffee is a Latte! </h2>");
+            break;
+        case "Cappuccino":
+            print("<h2> Your favorite coffee is a Cappuccino! </h2>");
+            break;
+        case "Mocha":
+            print("<h2> Your favorite coffee is a Mocha! </h2>");
+            break;
+        case "Americano":
+            print("<h2> Your favorite coffee is an Americano! </h2>");
+            break;
+        case "Espresso":
+            print("<h2> Your favorite coffee is an Espresso! </h2>");
+            break;
+        case "Macchiato":
+            print("<h2> Your favorite coffee is a Macchiato! </h2>");
+            break;
+        case "Affogato":
+            print("<h2> Your favorite coffee is an Affogato! </h2>");
+            break;}
+    
+    }
+    
 ?>
 
 </body>
