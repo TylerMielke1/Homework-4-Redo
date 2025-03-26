@@ -147,6 +147,17 @@ if($POST['q1-seasons'] && $_POST['q2-sugar'] && $_POST['q3-cream'] && $_POST['q4
             $favorite_Coffee_Points["Macchiato"] += 1;
             break;
     
+    switch($_POST['q7-coffeeshop']){
+        case "1":
+            $favorite_Coffee_Points["Starbucks"] += 1;
+            break;
+        case "2":
+            $favorite_Coffee_Points["Dunkin Donuts"] += 1;
+            break;
+        case "3":
+            $favorite_Coffee_Points["Tim Hortons"] += 1;
+            break;
+
     
     }
 
